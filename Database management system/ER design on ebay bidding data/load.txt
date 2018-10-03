@@ -1,0 +1,11 @@
+.separator |
+.import User1.dat User
+.import ItemNC1.dat ItemNC
+.import ItemWC1.dat ItemWC
+.import Bid1.dat Bid
+.import SellingHistory1.dat Seller
+.import BiddingHistory1.dat Bidder
+update User set Location = null where Location = 'missing';
+update User set Country = null where Country = 'missing';
+update ItemNC set BuyPrice = null where BuyPrice = 'missing';
+update ItemNC set Description = null where Description = 'mssing';
